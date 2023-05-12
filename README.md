@@ -5,7 +5,7 @@ https://aifactory.space/competition/detail/2048
   - 주제 : 실시간 OTT 서비스 이용자 수 트래픽 데이터를 기반으로 이상 발생 시점을 탐지
   - Task : Time series, Anomaly Detection
   - 기간 : 2022.04.18 ~ 2022.05.13, 2022.06.14(발표)
-  - 결과 : 최우수상 2등
+  - 결과 : 최우수상 2등 
   - 방법 : Unsupervised Anomaly Detection, AutoEncoder에 적대적 학습(adversarial training)을 접목하여 모델 구축
 <!--  Other options to write Readme
   - [Deployment](#deployment)
@@ -13,7 +13,11 @@ https://aifactory.space/competition/detail/2048
 -->
 ## 2.데이터셋 설명
 <!--Wirte one paragraph of project description -->  
-This project's purpose is to create a make Repository with a collection of default settings  
+- 미디어 서버 13종으로부터 수집된 5분 주기의 트랜잭션 데이터 24개월치가 제공.
+  - INFO.csv : 상품 가입/해지, 약관 동의, 구매, 포인트 조회를 위한 서버
+  - LOGIN.csv : 로그인, 본인 인증, PIN 관리를 위한 서버
+  - MENU.csv : 초기 메뉴, 채널 카테고리 메뉴 제공을 위한 서버
+  - STREAM.csv :  VOD 스트리밍을 위한 서버
 
 ## Overview
 <!-- Write Overview about this project -->
