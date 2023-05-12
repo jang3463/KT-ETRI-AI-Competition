@@ -1,17 +1,17 @@
 # KT-ETRI-AI-Competition
-## 1.개요
+## 1. 개요
 https://www.etnews.com/20220615000156  
 https://aifactory.space/competition/detail/2048
   - 주제 : 실시간 OTT 서비스 이용자 수 트래픽 데이터를 기반으로 이상 발생 시점을 탐지
   - Task : Time series, Anomaly Detection
   - 기간 : 2022.04.18 ~ 2022.05.13, 2022.06.14(발표)
-  - 결과 : 최우수상 2등 
+  - 결과 : 최우수상 2등 (개인 참가)
   - 방법 : Unsupervised Anomaly Detection, AutoEncoder에 적대적 학습(adversarial training)을 접목하여 모델 구축
 <!--  Other options to write Readme
   - [Deployment](#deployment)
   - [Used or Referenced Projects](Used-or-Referenced-Projects)
 -->
-## 2.데이터셋 설명
+## 2. 데이터셋 설명
 <!--Wirte one paragraph of project description -->  
 - 미디어 서버 13종으로부터 수집된 5분 주기의 트랜잭션 데이터 24개월치가 제공.
 
@@ -31,81 +31,20 @@ https://aifactory.space/competition/detail/2048
   - Fail: 수집 범위 내 발생한 서비스 요청 실패 수
   - Session: 수집 시점의 미디어 스트리밍 세션 수
 
-* 서버 중 하나라도 이상이면 최종 이상이라고 간주
+**서버 중 하나라도 이상이면 최종 이상이라고 간주
 
-## Overview
+## 수행방법
 <!-- Write Overview about this project -->
-**If you use this template, you can use this function**
-- Issue Template
-- Pull Request Template
-- Commit Template
-- Readme Template
-- Contribute Template
-- Pull Request Build Test(With Github Actions)
+- 본 과제의 특징은 어떤 시점에 이상이 발생하였는지의 레이블 정보가 제공되지 않는다는 것 (Unsupervised learning)
+- 먼저 데이터 전처리 과정에서 4종류의 데이터프레임을 하나로 concat. 
+- 그 후, 정규화와 지수 가중 함수를 적용하여 데이터 스무딩을 진행. 시간 데이터를 묶어 예측하도록 재구성하는 것이 중요한 과정
+- 모델 구축에서는 USAD(Unsupervised anomaly detection on multivariate time series)를 사용
+- USAD 모델은 Autoencoder와 GAN의 장점을 결합하여 구성되어 있어 안정적인 학습이 가능
+- 결과적으로, 158개의 이상 탐지를 성공하였고, F2_Score는 0.7234를 기록
 
-## Getting Started
-**click `Use this template` and use this template!**
-<!--
-### Depencies
- Write about need to install the software and how to install them 
--->
-### Installing
-<!-- A step by step series of examples that tell you how to get a development 
-env running
+## 한계점
+<!-- Write Overview about this project -->
+- 이 프로젝트에서는 결측치를 0으로 대체하는 방법을 사용했는데, 최선의 방법은 아니였음. 예를 들어, 평균 대치나 회귀분석을 통해 결측치를 예측하는 등 다른 방식으로 시도해볼 필요 있음. 
 
-Say what the step will be
-
-    Give the example
-
-And repeat
-
-    until finished
--->
-1. Click `Use this template` button 
-2. Create New Repository
-3. Update Readme and Others(Other features are noted in comments.)
-<!--
-## Deployment
- Add additional notes about how to deploy this on a live system
- -->
-## Contributing
-<!-- Write the way to contribute -->
-I am looking for someone to help with this project. Please advise and point out.  
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
-
-## Authors
-  - [Always0ne](https://github.com/Always0ne) - **SangIl Hwang** - <si8363@soongsil.ac.kr>
-
-See also the list of [contributors](https://github.com/always0ne/readmeTemplate/contributors)
-who participated in this project.
-<!--
-## Used or Referenced Projects
- - [referenced Project](project link) - **LICENSE** - little-bit introduce
--->
-
-## License
-
-```
-MIT License
-
-Copyright (c) 2020 always0ne
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+## Team member
+장종환 (개인으로 )
