@@ -6,7 +6,6 @@ https://aifactory.space/competition/detail/2048
   - Task : Time series, Anomaly Detection
   - 기간 : 2022.04.18 ~ 2022.05.13, 2022.06.14(발표)
   - 결과 : 최우수상 2등
-  - 방법 : Unsupervised Anomaly Detection, AutoEncoder에 적대적 학습(adversarial training)을 접목하여 모델 구축
 <!--  Other options to write Readme
   - [Deployment](#deployment)
   - [Used or Referenced Projects](Used-or-Referenced-Projects)
