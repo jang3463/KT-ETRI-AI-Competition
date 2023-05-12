@@ -5,7 +5,7 @@ https://aifactory.space/competition/detail/2048
   - 주제 : 실시간 OTT 서비스 이용자 수 트래픽 데이터를 기반으로 이상 발생 시점을 탐지
   - Task : Time series, Anomaly Detection
   - 기간 : 2022.04.18 ~ 2022.05.13, 2022.06.14(발표)
-  - 결과 : 최우수상 2등 (개인 참가)
+  - 결과 : 최우수상 2등
   - 방법 : Unsupervised Anomaly Detection, AutoEncoder에 적대적 학습(adversarial training)을 접목하여 모델 구축
 <!--  Other options to write Readme
   - [Deployment](#deployment)
