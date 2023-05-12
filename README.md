@@ -1,15 +1,15 @@
-# Repository Quick Start template
-## Index
-  - [Overview](#overview) 
-  - [Getting Started](#getting-started)
-  - [Contributing](#contributing)
-  - [Authors](#authors)
-  - [License](#license)
+# KT-ETRI-AI-Competition
+## 개요
+  - 주제 : 실시간 OTT 서비스 이용자 수 트래픽 데이터를 기반으로 이상 발생 시점을 탐지
+  - Task : Time series, Anomaly Detection
+  - 기간 : 2022.04.18 ~ 2022.05.13, 2022.06.14(발표)
+  - 결과 : 최우수상 2등
+  - 방법 : Unsupervised Anomaly Detection, AutoEncoder에 적대적 학습(adversarial training)을 접목하여 모델 구축
 <!--  Other options to write Readme
   - [Deployment](#deployment)
   - [Used or Referenced Projects](Used-or-Referenced-Projects)
 -->
-## About RepositoryTemplate
+## 데이터셋 설명
 <!--Wirte one paragraph of project description -->  
 This project's purpose is to create a make Repository with a collection of default settings  
 
