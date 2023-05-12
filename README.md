@@ -1,5 +1,7 @@
 # KT-ETRI-AI-Competition
 ## 개요
+https://www.etnews.com/20220615000156  
+https://aifactory.space/competition/detail/2048
   - 주제 : 실시간 OTT 서비스 이용자 수 트래픽 데이터를 기반으로 이상 발생 시점을 탐지
   - Task : Time series, Anomaly Detection
   - 기간 : 2022.04.18 ~ 2022.05.13, 2022.06.14(발표)
