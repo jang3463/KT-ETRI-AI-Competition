@@ -1,5 +1,5 @@
 # KT-ETRI-AI-Competition
-## 개요
+## 1.개요
 https://www.etnews.com/20220615000156  
 https://aifactory.space/competition/detail/2048
   - 주제 : 실시간 OTT 서비스 이용자 수 트래픽 데이터를 기반으로 이상 발생 시점을 탐지
@@ -11,7 +11,7 @@ https://aifactory.space/competition/detail/2048
   - [Deployment](#deployment)
   - [Used or Referenced Projects](Used-or-Referenced-Projects)
 -->
-## 데이터셋 설명
+## 2.데이터셋 설명
 <!--Wirte one paragraph of project description -->  
 This project's purpose is to create a make Repository with a collection of default settings  
 
