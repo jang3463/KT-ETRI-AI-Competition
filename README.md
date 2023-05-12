@@ -30,12 +30,12 @@ https://aifactory.space/competition/detail/2048
   - Fail: 수집 범위 내 발생한 서비스 요청 실패 수
   - Session: 수집 시점의 미디어 스트리밍 세션 수
 
-**서버 중 하나라도 이상이면 최종 이상이라고 간주
+**서버 중 하나라도 이상이면 최종 이상이라고 간주**
 
 ## 3. 수행방법
 <!-- Write Overview about this project -->
 - 본 과제의 특징은 어떤 시점에 이상이 발생하였는지의 레이블 정보가 제공되지 않는다는 것 (Unsupervised learning)
-- 먼저 데이터 전처리 과정에서 4종류의 데이터프레임을 하나로 concat. 
+- 먼저 데이터 전처리 과정에서 4종류의 데이터프레임을 하나로 concat
 - 그 후, 정규화와 지수 가중 함수를 적용하여 데이터 스무딩을 진행. 시간 데이터를 묶어 예측하도록 재구성하는 것이 중요한 과정
 - 모델 구축에서는 [USAD(Unsupervised anomaly detection on multivariate time series)](https://dl.acm.org/doi/pdf/10.1145/3394486.3403392)를 사용
 - USAD 모델은 Autoencoder와 GAN의 장점을 결합하여 구성되어 있어 안정적인 학습이 가능
