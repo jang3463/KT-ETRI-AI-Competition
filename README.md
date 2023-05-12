@@ -14,10 +14,20 @@ https://aifactory.space/competition/detail/2048
 ## 2.데이터셋 설명
 <!--Wirte one paragraph of project description -->  
 - 미디어 서버 13종으로부터 수집된 5분 주기의 트랜잭션 데이터 24개월치가 제공.
+- 파일명 설명
   - INFO.csv : 상품 가입/해지, 약관 동의, 구매, 포인트 조회를 위한 서버
   - LOGIN.csv : 로그인, 본인 인증, PIN 관리를 위한 서버
   - MENU.csv : 초기 메뉴, 채널 카테고리 메뉴 제공을 위한 서버
   - STREAM.csv :  VOD 스트리밍을 위한 서버
+- 데이터 컬럼 설명
+  - Timestamp: [YYYYMMDD_HHmm(a)-HHmm(b)] 형식을 가지며 수집 범위는 YYYY년 MM월 DD일 HH시 mm분(a)부터 HH시 mm분(b)
+  - Server: 수집 서버 분류(파일명 설명 참고)
+  - Request: 수집 범위 내 발생한 서비스 요청 수
+  - Success: 수집 범위 내 발생한 서비스 요청 성공 수
+  - Fail: 수집 범위 내 발생한 서비스 요청 실패 수
+  - Session: 수집 시점의 미디어 스트리밍 세션 수
+
+* 서버 중 하나라도 이상이면 최종 이상이라고 간주
 
 ## Overview
 <!-- Write Overview about this project -->
