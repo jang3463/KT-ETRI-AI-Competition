@@ -1,4 +1,6 @@
 # KT-ETRI-AI-Competition
+https://www.etnews.com/20220615000156
+https://aifactory.space/competition/detail/2048
 - 주제 : 실시간 OTT 서비스 이용자 수 트래픽 데이터를 기반으로 이상 발생 시점을 탐지
 
 
