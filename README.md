@@ -39,8 +39,8 @@ https://aifactory.space/competition/detail/2048
 - 그 후, 정규화와 지수 가중 함수를 적용하여 데이터 스무딩을 진행. 시간 데이터를 묶어 예측하도록 재구성하는 것이 중요한 과정
 - 모델 구축에서는 [USAD(Unsupervised anomaly detection on multivariate time series)](https://dl.acm.org/doi/pdf/10.1145/3394486.3403392)를 사용
 - USAD 모델은 Autoencoder와 GAN의 장점을 결합하여 구성되어 있어 안정적인 학습이 가능
-- 결과적으로, 158개의 이상 탐지를 성공하였고, F2_Score는 0.7234를 기록
-** 자세한 내용은 위의 코드 설명자료.pdf를 참조해 주시기 바랍니다.**
+- 결과적으로, 158개의 이상 탐지를 성공하였고, F2_Score는 0.7234를 기록  
+**자세한 내용은 위의 코드 설명자료.pdf를 참조해 주시기 바랍니다.**
 
 
 ## 4. 한계점
