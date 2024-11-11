@@ -45,10 +45,5 @@ https://aifactory.space/competition/detail/2048
 
 **자세한 내용은 위의 코드 설명자료.pdf를 참조해 주시기 바랍니다.**
 
-
-## 4. 한계점
-<!-- Write Overview about this project -->
-- 이 프로젝트에서는 결측치를 0으로 대체하는 방법을 사용했는데, 최선의 방법은 아니였음. 예를 들어, 평균 대치나 회귀분석을 통해 결측치를 예측하는 등 다른 방식으로 시도해볼 필요 있음. 
-
 ## Team member
 장종환 (개인 참가)
